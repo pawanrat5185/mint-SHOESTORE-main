@@ -20,19 +20,19 @@ class AllItemsWidget extends StatelessWidget {
             decoration: boxDecoration,
             child: Column(
               children: [
-               InkWell(
-                 onTap:() {
-                   Navigator.pushNamed(context, "itemPage");
-                 },
-                 child : Padding(
-                  padding: EdgeInsets.all(10),
-                  child: Image.asset(
-                    "images/$i.png",
-                    height: 130,
-                    width: 130,
+                InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(context, "itemPage");
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(10),
+                    child: Image.asset(
+                      "images/$i.png",
+                      height: 130,
+                      width: 130,
+                    ),
                   ),
                 ),
-               ),
                 Padding(
                   padding: EdgeInsets.only(bottom: 8),
                   child: Container(
@@ -51,8 +51,7 @@ class AllItemsWidget extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Container(
-                        child:
-                         Text(
+                        child: Text(
                           "\$50",
                           style: TextStyle(
                             fontSize: 20,
